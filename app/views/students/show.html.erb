@@ -1,0 +1,24 @@
+<h1>Student Details</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= "#{@student.first_name} #{@student.middle_name} #{@student.last_name}" %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong>Phone No:</strong>
+  <%= @student.phone_no %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @student.address %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
